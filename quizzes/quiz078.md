@@ -2,29 +2,24 @@
 
 
 ```.py
-def position_message(positions,msg,n):
-  m=0
-  final_msg=[]
-  for i in range(k+n):
-    final_msg.append(-1)
-    if not in i positions:
-      total_msg[i]=msg[x]
-      x+=1
-```
+def insert_parity(msg, ham_pos, k):
+    final = [-1 for _ in range(len(msg) + k)]
+    msgindex = 0
+    for i in range(len(final)):
+        if i not in ham_pos:
+            final[i] = msg[msgindex]
+            msgindex += 1
+    return final
+msg='1011'
+k=3
+ham_pos=[0,1,3]
 
-
-# OR
-
-```.py
-def position_message(positions, msg, n):
-    k = calculate_parity(n)
-    msg_list = [] 
-    for i in range(len(k) + n):
-        if i in k:
-            msg_list.append(-1)  # Parity position, append -1
-        else:
-            msg_list.append(msg[i - len([p for p in k if p <= i])])
-    return msg_list
+print(insert_parity(msg, ham_pos, k))
 
 ```
+
+
+**proof**
         
+![](https://github.com/marinamen/year2/blob/main/quizzes/media/IMG_5E03D09C5469-1.jpeg)
+![](https://github.com/marinamen/year2/blob/main/quizzes/media/Screenshot%202024-09-12%20at%2023.41.44.png)
