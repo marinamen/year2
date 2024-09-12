@@ -32,4 +32,6 @@ plt.grid(True)
 plt.show()
 
 ```
+*proof*
+![](https://github.com/marinamen/year2/blob/main/quizzes/media/IMG_32590EEC9D7C-1.jpeg)
 ![](https://github.com/marinamen/year2/blob/main/quizzes/media/Screenshot%202024-09-09%20at%2008.27.41.png)
