@@ -3,20 +3,20 @@
 ```.py
 def check_error(data):
     n=len(data) // 3
-    o, c1, c2=data[:n], data[n:2 * n], data[2 * n:]
-    err=False
-    res=[]
+    o,c1,c2=data[:n], data[n:2 * n], data[2 * n:]
+    error=False
+    corrected=[]
     for i in range(n):
         if o[i]==c1[i] or o[i] == c2[i]:
-            res.append(o[i])
+            corrected.append(o[i])
         elif c1[i]==c2[i]:
             res.append(c1[i])
         else:
             res.append(c1[i])
         if o[i]!=c1[i] or o[i]!=c2[i]:
-            err=True
+            error=True
 
-    return res, err
+    return corrected, error
 
 
 data = '011101111101110111110111001111'
